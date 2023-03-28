@@ -1,8 +1,7 @@
 import React, { ReactNode } from 'react';
 
 import Link from 'next/link';
-
-import { Navbar } from './Navbar';
+import { Navbar } from '../layout/Navbar';
 import { AppConfig } from '@/utility/Constants';
 
 type IMainProps = {
@@ -23,7 +22,7 @@ const Main = (props: IMainProps) => (
           <div className="text-xl">{AppConfig.description}</div>
         </div>
         <div>
-          <Navbar>
+          {/* <Navbar>
             <li className="mr-6">
               <Link href="/">
                 Home
@@ -34,7 +33,8 @@ const Main = (props: IMainProps) => (
                 About
               </Link>
             </li>
-          </Navbar>
+          </Navbar> */}
+          <Navbar/>
         </div>
       </div>
 

@@ -1,6 +1,7 @@
 import HeroPages from "@/components/HeroPages";
+import PlanTrip from "@/components/PlanTrip";
 import { Content } from "@/layout/Content";
-import { Main } from "@/layout/Main";
+import { MainOnlyContent } from "@/layout/MainOnlyContent";
 import { Meta } from "@/layout/Meta";
 import { AppConfig } from "@/utility/Constants";
 import Image from "next/image";
@@ -11,7 +12,7 @@ import box3 from "../images/about/icon3.png"
 
 export default function About() {
   return (
-    <Main meta={<Meta title={AppConfig.title} description={AppConfig.description} />}>
+    <MainOnlyContent meta={<Meta title={AppConfig.title} description={AppConfig.description} />}>
       <Content>
         <HeroPages name="About" />
         <div className="container mx-auto px-4">
@@ -52,8 +53,9 @@ export default function About() {
               </div>
             </div>
           </div>
+          <PlanTrip/>
         </div>
       </Content>
-    </Main>
+    </MainOnlyContent>
   );
 }

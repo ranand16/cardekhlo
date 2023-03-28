@@ -8,8 +8,8 @@ function HeroPages({ name }: HeroPagesType) {
   return (
     <>
       <section className="hero-pages">
-        <div className="hero-pages__overlay"></div>
-        <div className="container">
+        <div className="position-absolute top-0 right-0 w-full h-full" style={{ backgroundColor: "hsla(0,0%,100%,.92)" }}></div>
+        <div className="px-8">
           <div className="hero-pages__text">
             <h3>{name}</h3>
             <p>
