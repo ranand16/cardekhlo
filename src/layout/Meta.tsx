@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
-import Head from 'next/head';
-import { useRouter } from 'next/router';
+import Head from "next/head";
+import { useRouter } from "next/router";
 
-import { AppConfig } from '@/utility/Constants';
-import { addTrailingSlash } from '@/utility/Functions';
+import { AppConfig } from "@/utility/Constants";
+import { addTrailingSlash } from "@/utility/Functions";
 
 type IMetaProps = {
   title: string;

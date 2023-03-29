@@ -2,6 +2,7 @@ import Logo from "../images/logo/logo.png";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { NAV_LINKS } from "@/utility/Constants";
 
 export const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -14,88 +15,52 @@ export const Navbar = () => {
     <>
       <nav>
         {/* mobile */}
-        <div className={`mobile-navbar flex flex-col w-full h-screen fixed top-0 right-full justify-center z-[99999] items-center transition duration-150 ease-in-out  ${nav ? "open-nav" : ""}`}>
+        <div
+          className={`flex flex-col w-full h-screen fixed top-0 right-full justify-center z-[99999] items-center transition duration-150 ease-in-out  ${
+            nav ? "open-nav" : ""
+          }`}
+        >
           <div onClick={openNav} className="mobile-navbar__close">
             <i className="fa-solid fa-xmark"></i>
           </div>
           <ul className="mobile-navbar__links">
-            <li>
-              <Link onClick={openNav} href="/">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link onClick={openNav} href="/about">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link onClick={openNav} href="/models">
-                Models
-              </Link>
-            </li>
-            <li>
-              <Link onClick={openNav} href="/testimonials">
-                Testimonials
-              </Link>
-            </li>
-            <li>
-              <Link onClick={openNav} href="/team">
-                Our Team
-              </Link>
-            </li>
-            <li>
-              <Link onClick={openNav} href="/contact">
-                Contact
-              </Link>
-            </li>
+            {NAV_LINKS.map((link) => (
+              <>
+                <li>
+                  <Link
+                    className="flex"
+                    onClick={openNav}
+                    key={link["id"]}
+                    href={link["redirect"]}
+                  >
+                    {link["text"]}
+                  </Link>
+                </li>{" "}
+              </>
+            ))}
           </ul>
         </div>
 
-        {/* desktop */}
-
-        <div className="navbar">
-          <div className="navbar__img">
+        <div className="navbar hidden lg:flex max-w-[133rem] w-full justify-between items-center absolute top-0 left-0 right-0 ">
+          <div className="w-56">
             <Link href="/" onClick={() => window.scrollTo(0, 0)}>
-              <Image src={Logo} alt="logo-img" />
+              <Image src={Logo} alt="logo-img" className="w-full h-full" />
             </Link>
           </div>
-          <ul className="navbar__links">
-            <li>
-              <Link className="home-link" href="/">
-                Home
-              </Link>
-            </li>
-            <li>
-              {" "}
-              <Link className="about-link" href="/about">
-                About
-              </Link>
-            </li>
-            <li>
-              {" "}
-              <Link className="models-link" href="/models">
-                Vehicle Models
-              </Link>
-            </li>
-            <li>
-              {" "}
-              <Link className="testi-link" href="/testimonials">
-                Testimonials
-              </Link>
-            </li>
-            <li>
-              {" "}
-              <Link className="team-link" href="/team">
-                Our Team
-              </Link>
-            </li>
-            <li>
-              {" "}
-              <Link className="contact-link" href="/contact">
-                Contact
-              </Link>
-            </li>
+          <ul className="navbar__links flex gap-4">
+            {NAV_LINKS.map((link) => (
+              <>
+                <li>
+                  <Link
+                    className="home-link"
+                    key={link["id"]}
+                    href={link["redirect"]}
+                  >
+                    {link["text"]}
+                  </Link>
+                </li>{" "}
+              </>
+            ))}
           </ul>
           <div className="navbar__buttons">
             <Link className="navbar__buttons__sign-in" href="/">
@@ -105,15 +70,17 @@ export const Navbar = () => {
               Register
             </Link>
           </div>
-
-          {/* mobile */}
-          <div className="mobile-hamb" onClick={openNav}>
-            <i className="fa-solid fa-bars"></i>
-          </div>
+        </div>
+        {/* mobile */}
+        <div
+          className="mobile-hamb flex lg:hidden transition-all cursor-pointer"
+          onClick={openNav}
+        >
+          <i className="fa-solid fa-bars"></i>
         </div>
       </nav>
     </>
   );
-}
+};
 
 export default Navbar;

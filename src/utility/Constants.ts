@@ -7,3 +7,12 @@ export const AppConfig = {
   author: 'Rishabh Anand',
   pagination_size: 5,
 };
+
+export const NAV_LINKS = [
+  {id: 1, redirect: "/home",text:"Home"},
+  {id: 1, redirect: "/about",text:"About"},
+  {id: 1, redirect: "/models",text:"Vehicle Models"},
+  {id: 1, redirect: "/testimonials",text:"Testimonials"},
+  {id: 1, redirect: "/team",text:"Our Team"},
+  {id: 1, redirect: "/contact",text:"Contact"}
+];

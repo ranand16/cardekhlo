@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.mobile-hamb {
+  .fa-bars:before,
+  .fa-navicon:before {
+    content: "\f0c9";
+  }
+}

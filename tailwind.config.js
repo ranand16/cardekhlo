@@ -13,6 +13,9 @@ module.exports = {
       zIndex: {
         "99999": 99999
       },
+      maxWidth: {
+        '133rem': '133rem'
+      }
     },
     colors: {
       verydark: "#010103",
