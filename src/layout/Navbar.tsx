@@ -41,7 +41,7 @@ export const Navbar = () => {
           </ul>
         </div>
 
-        <div className="navbar hidden lg:flex max-w-[133rem] w-full justify-between items-center absolute top-0 left-0 right-0 ">
+        <div className="navbar hidden lg:flex max-w-[133rem] w-full justify-between items-center absolute top-0 left-0 right-0 py-8 px-11">
           <div className="w-56">
             <Link href="/" onClick={() => window.scrollTo(0, 0)}>
               <Image src={Logo} alt="logo-img" className="w-full h-full" />
@@ -52,7 +52,7 @@ export const Navbar = () => {
               <>
                 <li>
                   <Link
-                    className="home-link"
+                    className="font-bold text-blackprimary transition-all duration-300 hover:text-websiteprimary"
                     key={link["id"]}
                     href={link["redirect"]}
                   >
@@ -62,11 +62,17 @@ export const Navbar = () => {
               </>
             ))}
           </ul>
-          <div className="navbar__buttons">
-            <Link className="navbar__buttons__sign-in" href="/">
+          <div className="navbar__buttons flex gap-4 items-center">
+            <Link
+              className="navbar__buttons__sign-in text-blackprimary transition-all duration-300 hover:text-websiteprimary"
+              href="/"
+            >
               Sign In
             </Link>
-            <Link className="navbar__buttons__register" href="/">
+            <Link
+              className="navbar__buttons__register bg-websiteprimary text-white py-3 px-6 border-radius-3"
+              href="/"
+            >
               Register
             </Link>
           </div>

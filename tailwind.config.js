@@ -11,15 +11,17 @@ module.exports = {
   theme: {
     extend: {
       zIndex: {
-        "99999": 99999
+        99999: 99999,
       },
       maxWidth: {
-        '133rem': '133rem'
-      }
+        "133rem": "133rem",
+      },
+      colors: {
+        verydark: "#010103",
+        websiteprimary: "#AFD275",
+        blackprimary: "#010016",
+      },
     },
-    colors: {
-      verydark: "#010103",
-    }
   },
   plugins: [],
 };
