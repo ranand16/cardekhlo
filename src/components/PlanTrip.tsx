@@ -7,16 +7,16 @@ function PlanTrip() {
   return (
     <>
       <section className="plan-section">
-        <div className="container">
+        <div className="container mx-auto">
           <div className="plan-container">
-            <div className="plan-container__title">
+            <div className="plan-container__title text-center">
               <h3>Plan your trip now</h3>
-              <h2>Quick & easy car rental</h2>
+              <h2 className="mb-6 mt-3">Quick & easy car rental</h2>
             </div>
 
-            <div className="plan-container__boxes">
-              <div className="plan-container__boxes__box">
-                <Image src={SelectCar} alt="icon_img" />
+            <div className="plan-container__boxes mt-16 grid grid-cols-1 lg:grid-cols-3">
+              <div className="text-center py-3 px-14">
+                <Image className="mx-auto" src={SelectCar} alt="icon_img" />
                 <h3>Select Car</h3>
                 <p>
                   We offers a big range of vehicles for all your driving needs.
@@ -24,8 +24,8 @@ function PlanTrip() {
                 </p>
               </div>
 
-              <div className="plan-container__boxes__box">
-                <Image src={Contact} alt="icon_img" />
+              <div className="text-center py-3 px-14">
+                <Image className="mx-auto" src={Contact} alt="icon_img" />
                 <h3>Contact Operator</h3>
                 <p>
                   Our knowledgeable and friendly operators are always ready to
@@ -33,8 +33,8 @@ function PlanTrip() {
                 </p>
               </div>
 
-              <div className="plan-container__boxes__box">
-                <Image src={Drive} alt="icon_img" />
+              <div className="text-center py-3 px-14">
+                <Image className="mx-auto" src={Drive} alt="icon_img" />
                 <h3>Let's Drive</h3>
                 <p>
                   Whether you're hitting the open road, we've got you covered

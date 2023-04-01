@@ -10,7 +10,7 @@ const MainOnlyContent = (props: IMainProps) => (
   <div className="antialiased w-full text-gray-700">
     {props.meta}
     <Navbar />
-    <div className="text-xl">{props.children}</div>
+    <div>{props.children}</div>
   </div>
 );
 

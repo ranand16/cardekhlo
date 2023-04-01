@@ -1,8 +1,8 @@
 function Footer() {
   return (
     <>
-      <footer>
-        <div className="container">
+      <footer className=" py-24">
+        <div className="max-w-md md:max-w-4xl lg:max-w-80rem px-10 mx-auto">
           <div className="grid gap-32 align-left text-verydark justify-center grid-cols-1 md:grid-cols-4">
             <ul className="footer-content__1">
               <li>

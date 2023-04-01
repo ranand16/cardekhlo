@@ -20,6 +20,8 @@ module.exports = {
         verydark: "#010103",
         websiteprimary: "#AFD275",
         blackprimary: "#010016",
+        paragrey: "#706f7b",
+        nightrider: "#2d2d2d",
       },
     },
   },

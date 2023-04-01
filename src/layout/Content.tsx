@@ -5,20 +5,13 @@ type IContentProps = {
 };
 
 const Content = (props: IContentProps) => (
-  <div className="content">
+  <div className="">
     {props.children}
 
     <style jsx>
       {`
         .content :global(*) {
           @apply break-words;
-        }
-        .content :global(p) {
-          @apply my-1;
-          font-size: 1.125rem;
-          --text-opacity: 1;
-          color: #2d3748;
-          color: rgba(45, 55, 72, var(--text-opacity));
         }
         .content :global(ul) {
           @apply my-6;
