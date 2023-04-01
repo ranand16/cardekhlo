@@ -2,9 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-.mobile-hamb {
-  .fa-bars:before,
-  .fa-navicon:before {
-    content: "\f0c9";
-  }
+* {
+  @apply text-blackprimary;
+}
+
+h1 {
+  @apply text-6xl;
+  font-weight: bold;
+}
+h2 {
+  @apply text-5xl;
+  font-weight: bold;
+}
+h3 {
+  @apply text-4xl;
+  font-weight: bold;
+}
+
+.fa-navicon:before,
+.fa-bars:before {
+  content: "\f0c9";
+}
+
+/* close icon */
+.fa-close:before,
+.fa-multiply:before,
+.fa-remove:before,
+.fa-times:before,
+.fa-xmark:before {
+  content: "\2716";
+}
+
+/* Hero background image */
+.hero-pages {
+  background-image: url("../images/hero/heroes-bg.png");
+  background-position: 50%;
+  height: 26.6rem;
+}
+
+.mobile-nav-options {
+  left: -100%;
+}
+
+.open-mobile-nav-options {
+  left: 0px;
 }

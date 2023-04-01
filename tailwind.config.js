@@ -14,7 +14,7 @@ module.exports = {
         99999: 99999,
       },
       maxWidth: {
-        "133rem": "133rem",
+        "80rem": "80rem",
       },
       colors: {
         verydark: "#010103",

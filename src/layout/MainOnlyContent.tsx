@@ -1,5 +1,5 @@
-import React, { ReactNode } from 'react';
-import Navbar from './Navbar';
+import React, { ReactNode } from "react";
+import Navbar from "./Navbar";
 
 type IMainProps = {
   meta: ReactNode;
@@ -9,8 +9,8 @@ type IMainProps = {
 const MainOnlyContent = (props: IMainProps) => (
   <div className="antialiased w-full text-gray-700">
     {props.meta}
-    <Navbar/>
-    <div className="text-xl py-5">{props.children}</div>
+    <Navbar />
+    <div className="text-xl">{props.children}</div>
   </div>
 );
 
