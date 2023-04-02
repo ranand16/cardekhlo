@@ -22,6 +22,7 @@ module.exports = {
         blackprimary: "#010016",
         paragrey: "#706f7b",
         nightrider: "#2d2d2d",
+        inputbg: "#ececec",
       },
     },
   },
