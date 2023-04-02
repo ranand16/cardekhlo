@@ -6,14 +6,6 @@ import { Meta } from "@/layout/Meta";
 import { AppConfig, CAR_MODELS } from "@/utility/Constants";
 import { BookNow } from "@/components/BookNow";
 import Footer from "@/layout/Footer";
-import Link from "next/link";
-import CarImg1 from "../images/cars-big/audi-box.png";
-// import CarImg2 from "../images/cars-big/golf6-box.png";
-// import CarImg3 from "../images/cars-big/toyota-box.png";
-// import CarImg4 from "../images/cars-big/bmw-box.png";
-// import CarImg5 from "../images/cars-big/benz-box.png";
-// import CarImg6 from "../images/cars-big/passat-box.png";
-import Image from "next/image";
 
 export default function Models() {
   return (

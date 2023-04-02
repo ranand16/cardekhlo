@@ -9,7 +9,7 @@ export const AppConfig = {
 };
 
 export const NAV_LINKS = [
-  { id: 1, redirect: "/home", text: "Home" },
+  { id: 1, redirect: "/", text: "Home" },
   { id: 1, redirect: "/about", text: "About" },
   { id: 1, redirect: "/models", text: "Vehicle Models" },
   { id: 1, redirect: "/testimonials", text: "Testimonials" },
