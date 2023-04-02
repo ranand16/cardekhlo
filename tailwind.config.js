@@ -13,6 +13,12 @@ module.exports = {
       zIndex: {
         99999: 99999,
       },
+      height: {
+        "16rem": "16rem",
+      },
+      width: {
+        "68.75rem": "68.75rem",
+      },
       maxWidth: {
         "80rem": "80rem",
       },
@@ -23,6 +29,7 @@ module.exports = {
         paragrey: "#706f7b",
         nightrider: "#2d2d2d",
         inputbg: "#ececec",
+        lightgrey: "#d5d5d5",
       },
     },
   },
