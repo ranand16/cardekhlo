@@ -13,12 +13,12 @@ export function ModelBox({
   transmissionType,
 }: typeof CAR_MODELS[0]) {
   return (
-    <div className="models-div__box border border-solid boder-lightgray flex flex-col w-80 rounded-md">
-      <div className="models-div__box__img rounded-md">
+    <div className="border border-solid boder-lightgray flex flex-col w-80 rounded-md">
+      <div className="rounded-md">
         <img src={image} alt="car_img" className="h-16rem lg:" />
-        <div className="models-div__box__descr flex flex-col py-5 px-8">
-          <div className="models-div__box__descr__name-price flex items-center justify-between">
-            <div className="models-div__box__descr__name-price__name">
+        <div className="flex flex-col py-5 px-8">
+          <div className="flex items-center justify-between">
+            <div>
               <p className="text-xl font-bold">{name}</p>
               <span>
                 <i className="fa-solid fa-star"></i>
@@ -28,12 +28,12 @@ export function ModelBox({
                 <i className="fa-solid fa-star"></i>
               </span>
             </div>
-            <div className="models-div__box__descr__name-price__price">
+            <div>
               <h4 className="text-xl font-bold">${rate}</h4>
               <p>per day</p>
             </div>
           </div>
-          <div className="models-div__box__descr__name-price__details model-desc-details">
+          <div className="model-desc-details">
             <span>
               <i className="fa-solid fa-car-side"></i> &nbsp; {brand}
             </span>
@@ -55,7 +55,7 @@ export function ModelBox({
               {fuelType} &nbsp; <i className="fa-solid fa-car-side"></i>
             </span>
           </div>
-          <div className="models-div__box__descr__name-price__btn bg-websiteprimary border-2 border-websiteprimary cursor-pointer py-4 px-8 transition-all text-white text-center text-xl font-bold">
+          <div className="bg-websiteprimary border-2 border-websiteprimary cursor-pointer py-4 px-8 transition-all text-white text-center text-xl font-bold">
             <Link onClick={() => window.scrollTo(0, 0)} href={link}>
               Book Ride
             </Link>

@@ -13,7 +13,7 @@ function HeroPages({ name }: HeroPagesType) {
           style={{ backgroundColor: "hsla(0,0%,100%,.92)" }}
         ></div>
         <div className="mx-auto flex max-w-[80rem] h-full w-full justify-between items-center py-8 px-11">
-          <div className="hero-pages__text z-10 flex w-full justify-center flex-col text-blackprimary">
+          <div className="z-10 flex w-full justify-center flex-col text-blackprimary">
             <h3 className="leading-10 mb-2">{name}</h3>
             <p className="font-semibold">
               <Link href="/">Home</Link> / {name}

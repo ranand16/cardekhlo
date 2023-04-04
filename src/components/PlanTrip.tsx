@@ -6,15 +6,15 @@ import Drive from "../images/plan/icon3.png";
 function PlanTrip() {
   return (
     <>
-      <section className="plan-section">
+      <section>
         <div className="container mx-auto">
           <div className="plan-container">
-            <div className="plan-container__title text-center">
+            <div className="text-center">
               <h3>Plan your trip now</h3>
               <h2 className="mb-6 mt-3">Quick & easy car rental</h2>
             </div>
 
-            <div className="plan-container__boxes mt-16 grid grid-cols-1 lg:grid-cols-3">
+            <div className="mt-16 grid grid-cols-1 lg:grid-cols-3">
               <div className="text-center py-3 px-14">
                 <Image className="mx-auto" src={SelectCar} alt="icon_img" />
                 <h3>Select Car</h3>
